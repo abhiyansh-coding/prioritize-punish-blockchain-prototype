@@ -169,20 +169,24 @@ The mechanism is inspired by:
 ### 1. Start Local Blockchain
 
 ```bash
-cd contract
+cd ~/prioritize-punish-prototype/contract
 npx hardhat node
 ```
 
 ### 2. Deploy Smart Contract
+In a new terminal
 
 ```bash
+cd ~/prioritize-punish-prototype/contract
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
 ### 3. Start Frontend
+Again in a new terminal
 
 ```bash
-cd ../app
+cd ~/prioritize-punish-prototype/app
+npm install   # run only the first time
 npm run dev
 ```
 
